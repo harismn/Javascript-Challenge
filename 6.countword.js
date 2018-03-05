@@ -82,7 +82,7 @@
 // console.log(gali('q')); //1
 
 
-function wordFreq(str){
+function wordFreq(str, str2){
   let string = 'Aku ingin begini Aku ingin begitu Ingin ini itu banyak sekali Semua semua semua Dapat dikabulkan Dapat dikabulkan Dengan kantong ajaib Aku ingin terbang bebas Di angkasa Hei… baling baling bambu La... la... la... Aku sayang sekali Doraemon La... la... la... Aku sayang sekali'.toLowerCase().split(' ');
   let result = 0;
   for(var i = 0; i < string.length; i++){
@@ -90,9 +90,9 @@ function wordFreq(str){
       result += 1;
     }
   }
-  return result;
+  return str2 +": "+ result ;
 }
 
-console.log(wordFreq('aku'));
-console.log(wordFreq('ingin'));
-console.log(wordFreq('dapat'));
+console.log(wordFreq('aku', 'Aku'));
+console.log(wordFreq('ingin', 'Ingin'));
+console.log(wordFreq('dapat', 'Dapat'));
